@@ -19,8 +19,10 @@
 
 .card-text {
     line-height: 150%;
+    color: rgb(75, 75, 75);
 }
 .card-title {
+    color: rgb(50, 50, 50);
     line-height: 200%;
 }
 
@@ -47,6 +49,10 @@ body{
   height: 100%;
   background: rgb(255, 255, 255);
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.1));
+
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
   
   /* 動畫 */
   opacity: 0;
