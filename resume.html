@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="stylesheets/all.css">
 </head>
 
-<body>
+<body class="page-resume">
     <!-- 最上面navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow" style="background-color: #babcbe;">
-        <div class="container-fluid">
+    <nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg">
+          <div class="container-fluid">
           <a class="navbar-brand fw-bold" href="resume.html">Furong Yang</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav ms-auto">
               <a class="nav-link" href="project.html">Projects</a>
               <a class="nav-link" href="resume.html">Resume</a>
             </div>
@@ -25,110 +25,181 @@
         </div>
       </nav>
 
-      <div class="py-5 border-bottom">
+      <header class="hero-image">
+        <div class="hero-text">
+          <h1>楊馥蓉</h1>
+          <p>FuRong Yang</p>
+        </div>
+      </header>
+
+      <div class="py-5">
         <h1 class="fw-bold text-center">Resume</h1>
       </div>
 
       <!-- EDUCATION -->
-      <div class="container my-3 py-3 px-5 border-bottom">
-        <h2 class="fw-bold py-3">EDUCATION</h2>
-        
-            <!-- card 1-->
-            <div class="card my-3" data-tags="">
-                <div class="row px-3 py-3">
-                    <div class="col-lg-5">
-                        <h5 class="card-title">國立政治大學</h5>
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="card-text">主修-資訊科學系</p>
-                        <p class="card-text">雙主修-數位內容與科技學位學程</p>
-                        <p class="card-text">輔系-日本語言學系</p>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- card 2-->
-            <div class="card my-3" data-tags="">
-                <div class="row px-3 py-3">
-                    <div class="col-lg-5">
-                        <h5 class="card-title">國立政治大學</h5>
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="card-text">數位內容碩士學位學程</p>
-                        <p class="card-text">2023fall 香川大學創發科學研究科 交換學生</p>
-                    </div>
-                </div>         
+      <div class="container resume my-3 py-3 w-75">
+        <div class="row justify-content-between">
+          <div class="col-3 col-md-3">
+            <h4 class="fw-bold text-end">EDUCATION</h4>
           </div>
+            <div class="col-5 align-self-end col-sm-9"><hr></div>
+          </div>
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-4 my-3">
+              <h5 class="fw-bold">國立政治大學 ​National Chengchi University</h5> <br>
+              <p class="fw-bold">​資訊科學系 // 主修</p>
+              <p>Major  |  Department of Computer Science </p>
+              <p class="fw-bold">數位內容與科技學士學位學程  // 雙主修</p> 
+              <p>Double Major  |  Program in Digital Content & Technologies</p>
+              <p class="fw-bold">日本語言學系 // 輔系</p>
+              <p>Minor  |  Department of Japanese</p>
+              <p>✨</p>
+              <p class="fw-bold">數位內容與科技碩士學位學程</p>
+              <p>Graduate Program in Digital Content and Technologies</p>
+              <p class="fw-bold">香川大學  創發科學研究科交換學生 // 2023 fall</p> 
+              <p>Kagawa University  |  Graduate School of Science for Creative Emergence</p>
+          </div>
+        </div>
       </div>
 
+      <!-- TOOLS -->
+      <div class="container resume my-3 py-3 w-75">
+        <div class="row justify-content-between">
+          <div class="col-3 col-md-3">
+            <h4 class="fw-bold text-end">TOOLS</h4>
+          </div>
+            <div class="col-5 align-self-end col-sm-9"><hr></div>
+          </div>
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-4 my-3">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">Unity</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">Unreal</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">Photoshop</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">After Effects</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">Blender</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROGRAMMING -->
+      <div class="container resume my-3 py-3 w-75">
+        <div class="row justify-content-between">
+          <div class="col-3 col-md-3">
+            <h4 class="fw-bold text-end">PROGRAMMING</h4>
+          </div>
+            <div class="col-4 align-self-end col-sm-9"><hr></div>
+          </div>
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-4 my-3">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">C#</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">C++</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">OOP</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">JavaScript</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">HTML / CSS</p>
+              </div>
+              <div class="col-6 col-md-9"> OOOOO </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LANGUAGE -->
+      <div class="container resume my-3 py-3 w-75">
+        <div class="row justify-content-between">
+          <div class="col-3 col-md-3">
+            <h4 class="fw-bold text-end">LANGUAGE</h4>
+          </div>
+            <div class="col-5 align-self-end col-sm-9"><hr></div>
+          </div>
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-4 my-3">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">日文</p>
+              </div>
+              <div class="col-6 col-md-9"> N1 </div>
+
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">英文</p>
+              </div>
+              <div class="col-6 col-md-9"> 尚可，日常溝通與閱讀文件 </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- EXPERIENCE -->
-      <div class="container my-3 py-3 px-5 border-bottom">
-        <h2 class="fw-bold py-3">EXPERIENCE</h2>
-        
-        <!-- card 1-->
-        <div class="card my-3" data-tags="">
-            <div class="row px-3 py-3">
-                <div class="col-lg-5">
-                    <h5 class="card-title">20XX-20XX</h5>
+      <div class="container resume my-3 py-3 w-75">
+        <div class="row justify-content-between">
+          <div class="col-3 col-md-3">
+            <h4 class="fw-bold text-end">EXPERIENCE</h4>
+          </div>
+            <div class="col-5 align-self-end col-sm-9"><hr></div>
+          </div>
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-4 my-3">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">20XX-20XX</p>
+              </div>
+              <div class="col-6 col-md-9">
+                <p class="fw-bold">Mr.Bruno烘焙 - 網頁維護</p>
+                <p>網頁版面修改、維護</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <p class="fw-bold">2022</p>
+              </div>
+              <div class="col-6 col-md-9">
+                <p class="fw-bold">OpenHCI 2022 - 網管組組長</p>
+                <p>網站架設、協助場地網路事宜</p>
                 </div>
-                <div class="col-lg-7">
-                    <p class="card-text">Mr.Bruno烘焙 - 網頁維護</p>
-                    <p class="card-text">網頁版面修改、維護</p>
-                </div>
+
+              
             </div>
+          </div>
         </div>
-        <!-- card 2-->
-        <div class="card my-3" data-tags="">
-            <div class="row px-3 py-3">
-                <div class="col-lg-5">
-                    <h5 class="card-title">20XX</h5>
-                </div>
-                <div class="col-lg-7">
-                    <p class="card-text">OpenHCI 2022 - 網管組組長</p>
-                    <p class="card-text">網站架設</p>
-                    <p class="card-text">協助場地網路事宜</p>
-                </div>
-            </div>         
-      </div> 
       </div>
-
-
-      <!-- SKILL -->
-      <div class="container my-3 py-3 px-5 border-bottom">
-        <h2 class="fw-bold py-3">個人技能</h2>
-
-        <!-- card 1-->
-        <div class="card my-3" data-tags="">
-            <div class="row px-3 py-3">
-                <div class="col-lg-5">
-                    <h5 class="card-title fw-bold">SKILL</h5>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row row-cols-3 gy-3">
-                        <div class="col"><h5><span class="badge bg-info text-dark">Unity</span></h5></div>
-                        <div class="col"><h5><span class="badge bg-info text-dark">C#</span></h5></div>
-                        <div class="col"><h5><span class="badge bg-info text-dark">C++</span></h5></div>
-                        <div class="col"><h5><span class="badge bg-info text-dark">BootStrap</span></h5></div>
-                        <div class="col"><h5><span class="badge bg-info text-dark">Unreal</span></h5></div>
-                    </div>
-                </div>
-            </div>         
-      </div> 
-
-      <!-- card 2-->
-      <div class="card my-3" data-tags="">
-        <div class="row px-3 py-3">
-            <div class="col-lg-5">
-                <h5 class="card-title fw-bold">Language</h5>
-            </div>
-            <div class="col-lg-7">
-                <p class="card-text">日文 N1</p>
-                <p class="card-text">英文 尚可</p>
-            </div>
-        </div>         
-  </div> 
-
 
 
       </div>

@@ -58,7 +58,40 @@ function observeCardsForScrollIn() {
   
   // 初始執行
   document.addEventListener('DOMContentLoaded', () => {
-    setupTagFilters();
-    filterCards('all'); // 預設顯示全部並觀察動畫
+
+    const navbar = document.getElementById('mainNavbar');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  
+    const body = document.body;
+    // 載入 resume 頁面
+    if (body.classList.contains('page-resume')) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, { threshold: 0.2 });
+  
+      const resumeSections = document.querySelectorAll('.resume');
+      resumeSections.forEach(section => {
+        observer.observe(section);
+      });
+    
+    }
+
+    // 載入 project 頁面
+    else{
+      setupTagFilters();
+      filterCards('all'); // 預設顯示全部並觀察動畫
+    }
   });
   

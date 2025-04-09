@@ -5,14 +5,16 @@
 @import "../node_modules/bootstrap/scss/bootstrap"; //Bootstrap 完整原始碼
 
 
-.my-header {
-    background: rgba(255, 255, 255, 0.5);
+body{
+  background-color: rgb(250, 250, 250);
 }
 
 .filter-buttons button {
   margin: 0.2rem;
 }
 
+
+/* 卡片設置區 */
 .card[data-tags] {
   display: block;
 }
@@ -26,10 +28,61 @@
     line-height: 200%;
 }
 
-body{
-    background-color: rgb(240, 240, 240);
+/* 最上面 hero pic */
+// Hero 區塊
+.hero-image {
+  background-image: url('../image/AR_rabbit.png'); // 替換成你自己的圖片路徑
+  background-size: cover;
+  background-position: center;
+  height: 50vh; // 滿版高度
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+
+  .hero-text {
+    z-index: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); // 遮罩
+    z-index: 0;
+  }
 }
 
+
+/* navbar設定  */
+/* 初始樣式（在最上面） */
+#mainNavbar {
+  background-color: transparent;
+  color: white;
+  padding: 1.2rem 1rem;
+  transition: all 0.3s ease;
+}
+
+#mainNavbar .nav-link,
+#mainNavbar .navbar-brand {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* 滾動後樣式 */
+#mainNavbar.scrolled {
+  background-color: white;
+  padding: 0.8rem 1rem; /* 縮短高度約10% */
+}
+
+#mainNavbar.scrolled .nav-link,
+#mainNavbar.scrolled .navbar-brand {
+  color: black;
+}
 
 /* 動畫設定  */
 
@@ -43,7 +96,18 @@ body{
       transform: translateY(0);
     }
 }
-  
+
+/* 設定初始狀態 */
+.resume {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out;
+}
+/* 當滾動到這個區塊時觸發動畫 */
+.resume.show {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
 
 .card {
   height: 100%;
@@ -66,3 +130,4 @@ body{
   transform: translateY(0);
   animation: fadeInUp 0.6s ease-out forwards;
 }
+
