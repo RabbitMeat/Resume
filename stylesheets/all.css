@@ -11990,7 +11990,7 @@ body {
 
 /* 最上面 hero pic */
 .hero-image {
-  background-image: url("../image/AR_rabbit.png");
+  background-image: url("../image/header.jpg");
   background-size: cover;
   background-position: center;
   height: 50vh;
