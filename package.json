@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.35"
   }
 }
